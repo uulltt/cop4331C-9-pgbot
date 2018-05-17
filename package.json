@@ -1,5 +1,5 @@
 {
-  "name": "COP4331 Group 9",
+  "name": "processes group 9",
   "description": "queries",
   "version": "1.0.0",
   "main": "bot.js",
@@ -9,8 +9,5 @@
   "dependencies": {
     "discord.js": "11.3.2",
 	"pg": "7.4.3"
-  },
-    "devDependencies": {
-        "mocha": "^3.2.0"
-}
+  }
 }
