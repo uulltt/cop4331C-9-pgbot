@@ -6,7 +6,7 @@ const {
 } = require('pg');
 
 const herokupg = new Client({
-		connectionString: 'postgres://wwtmrxkpricrhc:1923cd7cdb15dc8639a0dba5e6d121d89db624a678e997725b4607064b1c0aa4@ec2-54-204-23-228.compute-1.amazonaws.com:5432/dfsnm7f68c0uc'
+		connectionString: 'postgres://wwtmrxkpricrhc:1923cd7cdb15dc8639a0dba5e6d121d89db624a678e997725b4607064b1c0aa4@ec2-54-204-23-228.compute-1.amazonaws.com:5432/dfsnm7f68c0uc',
 		ssl: true,
 	});
 
