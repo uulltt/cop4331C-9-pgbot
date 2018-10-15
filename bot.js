@@ -35,7 +35,7 @@ client.on('message', message => {
 		}
 	
 	if (message.content.startsWith("API go!")){
-	request.get(http://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=PRCP&locationid=ZIP:33309&startdate=2018-05-01&enddate=2018-05-23, {Token: 'EVsHKopYoOqeGEVaQXQszifvBJEAfbSg'}, function(err, res, body){
+	request.get('http://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=PRCP&locationid=ZIP:33309&startdate=2018-05-01&enddate=2018-05-23', {Token: 'EVsHKopYoOqeGEVaQXQszifvBJEAfbSg'}, function(err, res, body){
 		    console.log(JSON.parse(body.toString()));
 		    });
 	}
