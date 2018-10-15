@@ -1,5 +1,8 @@
 
 const Discord = require('discord.js');
+var request = require('request').defaults({
+		encoding: null
+	});
 const client = new Discord.Client();
 const {
 	Client
@@ -30,6 +33,14 @@ client.on('message', message => {
 					console.log(err);
 			});
 		}
+	
+	if (message.content.startsWith("API go!")){
+	request.get(http://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=PRCP&locationid=ZIP:33309&startdate=2018-05-01&enddate=2018-05-23, {Token: 'EVsHKopYoOqeGEVaQXQszifvBJEAfbSg'}, function(err, res, body){
+		    console.log(JSON.parse(body.toString()));
+		    });
+	}
+		
+	}
 		
 	});
 
